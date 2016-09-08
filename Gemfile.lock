@@ -24,11 +24,21 @@ GEM
       gherkin (~> 4.0)
     cucumber-wire (0.0.1)
     diff-lcs (1.2.5)
+    executable-hooks (1.2.6)
     ffi (1.9.14)
     gherkin (4.0.0)
     multi_json (1.12.1)
     multi_test (0.1.2)
+    rspec (3.5.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+    rspec-core (3.5.3)
+      rspec-support (~> 3.5.0)
     rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-mocks (3.5.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
@@ -38,7 +48,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aruba
+  aruba (~> 0.14.2)
+  executable-hooks
+  rspec
 
 BUNDLED WITH
    1.11.2

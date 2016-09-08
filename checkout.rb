@@ -9,7 +9,6 @@ new_items = gets.chomp
 
 co = Checkout.new(@pricing_rules)
 new_items = new_items.delete(' ').split(',')
-puts "New Items: #{new_items}"
 new_items.each do |item|
   co.scan(item)
 end
